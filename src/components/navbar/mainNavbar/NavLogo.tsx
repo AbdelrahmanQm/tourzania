@@ -1,0 +1,23 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import mainData from "@/components/appData/mainData";
+import logo from "../../../../public/img/logo-h_70.png";
+
+const NavLogo: React.FC = () => {
+  return (
+    <div>
+      <Link href="/">
+        <Image
+          src={logo}
+          alt={mainData.imgAlt.mainLogo}
+          height="70"
+          width="401"
+          className="h-[40px] w-auto"
+        />
+      </Link>
+    </div>
+  );
+};
+
+export default NavLogo;
