@@ -1,7 +1,7 @@
 const navLinksData = [
   {
     linkName: "Tours",
-    linkHref: "/",
+
     subLinks: [
       { subLinkName: "Muscat Tours", subLinkHref: "/" },
       { subLinkName: "Salalah Tours", subLinkHref: "/" },
@@ -11,7 +11,7 @@ const navLinksData = [
   },
   {
     linkName: "Travel",
-    linkHref: "/",
+
     subLinks: [
       { subLinkName: "Hotels", subLinkHref: "/" },
       { subLinkName: "Flights", subLinkHref: "/" },
@@ -19,7 +19,7 @@ const navLinksData = [
   },
   {
     linkName: "Oman",
-    linkHref: "/",
+
     subLinks: [
       { subLinkName: "Things To Do", subLinkHref: "/" },
       { subLinkName: "Gallery", subLinkHref: "/" },

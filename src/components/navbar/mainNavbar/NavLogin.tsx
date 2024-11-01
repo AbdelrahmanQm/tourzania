@@ -1,7 +1,12 @@
 import React from "react";
+import NavLoginBtn from "./NavLoginBtn";
 
 const NavLogin: React.FC = () => {
-  return <div>NavLogin</div>;
+  return (
+    <div>
+      <NavLoginBtn />
+    </div>
+  );
 };
 
 export default NavLogin;
