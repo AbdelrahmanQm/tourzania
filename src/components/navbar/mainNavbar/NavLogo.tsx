@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import mainData from "@/components/appData/mainData";
 import logo from "../../../../public/img/logo-h_70.png";
-import { MenuIcon } from "../../../../public/svgs/page";
 
 const NavLogo: React.FC = () => {
   return (

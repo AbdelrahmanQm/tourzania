@@ -19,6 +19,7 @@ const config: Config = {
       yellow: "#faab36",
       orange: "#f78104",
       red: "#fd5901",
+      lightestgreen: "#4bc7c9",
       lightgreen: "#249ea0",
       green: "#008083",
       darkgreen: "#005f60",
@@ -27,6 +28,7 @@ const config: Config = {
       darkgray: "#333",
       white: "#ffffff",
       lightgray: "#d3dce6",
+      graybg: "#f5f5f5",
     },
     extend: {
       fontFamily: {

@@ -2,16 +2,17 @@
 import React from "react";
 import { MenuIcon } from "../../../../public/svgs/page";
 import { useDispatch } from "react-redux";
-import { toggleMenu } from "@/state/menuSlice";
+
+import { toggleSideBar } from "@/state/sideBarSlice";
 
 const MenuBtn = () => {
   const dispatch = useDispatch();
   return (
     <div>
       <MenuIcon
-        className="text-4xl font-bold cursor-pointer bg-lightgreen text-white border-4 border-lightgreen rounded-sm"
+        className="text-2xl font-bold cursor-pointer text-gray"
         onClick={() => {
-          dispatch(toggleMenu());
+          dispatch(toggleSideBar());
         }}
       />
     </div>
