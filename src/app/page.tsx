@@ -7,6 +7,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative">
       <HeroMain />
+      <div className="h-[200vh]"></div>
     </div>
   );
 };
