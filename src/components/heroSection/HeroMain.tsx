@@ -8,13 +8,23 @@ import HeroSearch from "../search/HeroSearch";
 
 const HeroMain: React.FC = () => {
   return (
-    <div className="bg-graybg px-6 relative">
-      <Image src={worldMap} fill alt="world map" className="opacity-15 " />
-      <div className="max-w-[1250px] mx-auto flex items-center h-[100vh] gap-12 relative">
-        <HeroText />
-        <HeroImages />
-        <div className=" absolute z-10 left-0 bottom-32">
+    <div className="bg-graybg px-4 relative">
+      <Image
+        src={worldMap}
+        fill
+        alt="world map"
+        className="opacity-15  "
+        objectFit="cover"
+      />
+      <div className="lg:max-w-[1250px] md:max-w-[1000px] mx-auto flex items-center h-[100vh] gap-12 relative lg:flex-row sm:flex-col">
+        <div className="lg:mt-0 sm:mt-36 sm:text-center lg:text-left">
+          <HeroText />
+        </div>
+        <div className=" lg:absolute sm:relative z-10 left-0 lg:bottom-32 sm:bottom-0 w-full">
           <HeroSearch />
+        </div>
+        <div className="w-full lg:mt-0 sm:mt-12">
+          <HeroImages />
         </div>
       </div>
     </div>

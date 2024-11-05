@@ -17,17 +17,17 @@ const NavLink: React.FC<linkProps> = ({ linkData }) => {
     setViewOn(!viewOn);
   };
   return (
-    <li className="relative group lg:w-auto sm:w-full lg:block sm:flex sm:flex-col ">
+    <li className="relative group lg:w-auto sm:w-full lg:block sm:flex sm:flex-col z-[19]">
       {linkData.linkHref ? (
         <Link
-          className="lg:text-gray sm:text-white sm:hover:text-white lg:hover:text-green transition-all duration-500 text-lg font-semibold w-full sm:bg-gray lg:bg-graybg lg:hover:bg-white sm:hover:bg-lightgreen sm:text-center lg:py-8 sm:py-4"
+          className="lg:text-gray sm:text-white sm:hover:text-white lg:hover:text-green transition-all duration-500 text-lg font-semibold w-full sm:bg-gray lg:bg-graybg lg:hover:bg-graybg sm:hover:bg-lightgreen sm:text-center lg:py-8 sm:py-4"
           href={linkData.linkHref}
         >
           {linkData.linkName}
         </Link>
       ) : (
         <a
-          className="lg:text-gray sm:text-white sm:hover:text-white lg:hover:text-green transition-all duration-500 text-lg font-semibold w-full sm:bg-gray lg:bg-graybg lg:hover:bg-white sm:hover:bg-lightgreen sm:text-center lg:py-8 sm:py-4 cursor-pointer "
+          className="lg:text-gray sm:text-white sm:hover:text-white lg:hover:text-green transition-all duration-500 text-lg font-semibold w-full sm:bg-gray lg:bg-graybg lg:hover:bg-graybg sm:hover:bg-lightgreen sm:text-center lg:py-8 sm:py-4 cursor-pointer "
           onClick={toggleView}
         >
           {linkData.linkName}
