@@ -7,9 +7,9 @@ import SideBarBtn from "./SideBarBtn";
 
 const NavMain: React.FC = () => {
   return (
-    <div className="bg-graybg">
-      <div className="max-w-[1300px] mx-auto px-4 pt-6 relative ">
-        <nav className="flex justify-between items-center lg:gap-24 sm:gap-0">
+    <div className="bg-graybg px-4 relative">
+      <div className="lg:max-w-[1250px]  md:max-w-[1000px] mx-auto  pt-6  w-full">
+        <nav className="flex justify-between  items-center lg:gap-24 sm:gap-0">
           <div>
             <NavLogo />
           </div>
