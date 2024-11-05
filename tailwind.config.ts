@@ -34,6 +34,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         body: ["Josefin Sans"],
+        hand: ["Caveat"],
       },
       borderRadius: {
         lg: "var(--radius)",
