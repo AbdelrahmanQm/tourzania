@@ -36,6 +36,10 @@ const config: Config = {
         body: ["Josefin Sans"],
         hand: ["Caveat"],
       },
+      dropShadow: {
+        textlight: "0 35px 35px rgba(0, 0, 0, 0.25)",
+        textheavy: "0px 0px 23px 0px rgba(0,0,0,0.75)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
