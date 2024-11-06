@@ -30,11 +30,15 @@ const config: Config = {
       white: "#ffffff",
       lightgray: "#d3dce6",
       graybg: "#f5f5f5",
+      section: "#666",
     },
     extend: {
       fontFamily: {
         body: ["Josefin Sans"],
         hand: ["Caveat"],
+      },
+      fontSize: {
+        section: "2rem",
       },
       dropShadow: {
         textlight: "0 35px 35px rgba(0, 0, 0, 0.25)",
