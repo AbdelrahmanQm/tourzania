@@ -6,3 +6,6 @@ export { default as ChevronDown } from "./ChevronDown.svg";
 export { default as OmanFlag } from "./OmanFlag.svg";
 export { default as CorrectIcon } from "./CorrectIcon.svg";
 export { default as MoneyIcon } from "./MoneyIcon.svg";
+export { default as LocationIcon } from "./LocationIcon.svg";
+export { default as DurationIcon } from "./DurationIcon.svg";
+export { default as RouteIcon } from "./RouteIcon.svg";
