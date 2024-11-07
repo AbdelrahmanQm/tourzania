@@ -21,10 +21,14 @@ interface TourCardLgProps {
 }
 
 const TourCardLg: React.FC<TourCardLgProps> = ({ tour }) => {
+  const shortDescription = tour.describtion
+    .split(" ")
+    .filter((_, index) => index < 20)
+    .join(" ");
   return (
-    <div className="flex flex-col max-w-[385px] rounded-lg overflow-hidden shadow-xl">
-      <div>
-        <Image src={tour.image} objectFit="cover" alt="Tour Image" />
+    <div className="flex flex-col max-w-[385px] rounded-xl overflow-hidden shadow-xl">
+      <div className="h-[250px] relative">
+        <Image src={tour.image} objectFit="cover" fill alt="Tour Image" />
       </div>
       <div className="relative px-6">
         <div className="  translate-y-[-50%] bg-white shadow-lg py-3 px-4  mx-auto flex items-center rounded-sm justify-between">
@@ -47,7 +51,9 @@ const TourCardLg: React.FC<TourCardLgProps> = ({ tour }) => {
             </div>
           </div>
           <div className="border-b border-t py-4">
-            <p className="text-gray whitespace-normal">{tour.describtion}</p>
+            <p className="text-lightergray whitespace-normal text-lg">
+              {shortDescription}...
+            </p>
           </div>
           <div className="flex justify-between items-center">
             <Link
