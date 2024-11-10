@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleImage from "./SingleImage";
-import heroImageOne from "../../../public/img/i-parallax-15.jpeg";
-import heroImageTwo from "../../../public/img/i-parallax-20.jpeg";
+import heroImageOne from "../../../public/img/i-parallax-15.jpg";
+import heroImageTwo from "../../../public/img/i-parallax-20.jpg";
 
 const HeroImages: React.FC = () => {
   const [offsetY, setOffsetY] = useState<number>(0);

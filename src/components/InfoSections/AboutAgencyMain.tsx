@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import jebelShams from "../../../public/img/temp/Billad-Sayt-Day-trip-4WD.jpg";
+import jebelShams from "../../../public/img/temp/aboutImage.jpg";
 import mainData from "../appData/mainData";
 const AboutAgencyMain: React.FC = () => {
   return (
-    <div className="flex max-w-[1250px] px-4 mx-auto gap-24 items-center lg:flex-row xmd:flex-col w-full">
+    <div className="flex max-w-[1250px] px-4 mx-auto lg:gap-24 sm:gap-8 items-center lg:flex-row sm:flex-col w-full">
       <div className="flex-1">
         <h2 className="font-bold text-xl font-hand mb-4 text-lightgreen">
           {mainData.content.aboutAgency.subText}
@@ -16,8 +16,8 @@ const AboutAgencyMain: React.FC = () => {
           {mainData.content.aboutAgency.aboutText}
         </p>
       </div>
-      <div className="flex-1 h-[400px] bg-yellow overflow-hidden rounded-l-full relative flex items-center">
-        <Image src={jebelShams} alt="About Company" objectFit="fill" />
+      <div className="flex-1 md:max-h-[350px] sm:max-h-[250px]  overflow-hidden lg:rounded-l-full sm:rounded-3xl relative flex items-center">
+        <Image src={jebelShams} alt="About Company" objectFit="cover" />
       </div>
     </div>
   );
