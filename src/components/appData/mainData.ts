@@ -9,6 +9,17 @@ const mainData = {
     featuresMainText: "Why Tourzania",
     featuresSubText:
       "We are the number one website for tours and travel packages in Oman, offering top-rated experiences throughout the country.",
+    aboutAgency: {
+      mainText: "Vacation Packages Oman",
+      subText: "Your Life Time Vacation In Oman",
+      aboutText: `Vacation Packages Oman is a class "A" tour operator located
+          in Muscat city the capital of Oman, one of the top leading tour
+          operators in Oman, based on our solid structure of our professional
+          booking agents, expert local suppliers, partnership with top hotels,
+          and modern comfortable vehicles, we serve our clients with the top
+          level of quality and safety to provide them with a Life Time tour and
+          unforgettable experience in Oman.`,
+    },
     features: [
       {
         icon: OmanFlag,

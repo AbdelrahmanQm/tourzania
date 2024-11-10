@@ -12,7 +12,7 @@ const TopToursMain: React.FC = () => {
       <h2 className="text-section font-bold mb-8">Trending Tours</h2>
       <ScrollArea className="w-full whitespace-nowrap rounded-md lg:max-w-[1250px] mx-auto">
         <div className="flex w-max lg:space-x-0 lg:p-0 sm:space-x-4 sm:p-4 ">
-          <div className="flex gap-8  mt-4 px-4 py-12">
+          <div className="flex gap-8  mt-4 lg:px-4 sm:px-2 py-12">
             {toursData.map((tour, index) => {
               return <TourCardLg key={index} tour={tour} />;
             })}

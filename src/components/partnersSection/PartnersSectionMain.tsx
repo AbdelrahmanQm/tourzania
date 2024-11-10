@@ -2,13 +2,11 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import partnersData from "../appData/partnersData";
-import { Card, CardContent } from "@/components/ui/card";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Partner from "./Partner";
 
@@ -18,7 +16,10 @@ export default function PartnersSectionMain() {
   );
 
   return (
-    <div className="max-w-[1250px] mx-auto">
+    <div className="max-w-[1250px] mx-auto mt-24">
+      <div className="flex flex-col items-center mb-12">
+        <h2 className="font-bold text-3xl text-section ">Our Partners</h2>
+      </div>
       <Carousel
         plugins={[plugin.current]}
         className="w-full max-w-5xl mx-auto" // Increased max-width to accommodate 3 items
@@ -31,15 +32,16 @@ export default function PartnersSectionMain() {
       >
         <CarouselContent className="">
           {partnersData.map((partner, index) => (
-            <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3">
-              <div className="p-1">
+            <CarouselItem
+              key={index}
+              className="pl-2 md:pl-4 lg:basis-1/4 md:basis-1/3 xmd:basis-1/2 sm:basis-1/1 justify-center"
+            >
+              <div className="p-1 flex justify-center">
                 <Partner image={partner.image} />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </div>
   );

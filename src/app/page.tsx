@@ -7,6 +7,7 @@ import ShortCutsMain from "@/components/shortCutsSection/ShortCutsMain";
 import TopToursMain from "@/components/topToursSection/TopToursMain";
 import TopAttractionsMain from "@/components/topAttractionsSection/TopAttractionsMain";
 import PartnersSectionMain from "@/components/partnersSection/PartnersSectionMain";
+import AboutAgencyMain from "@/components/InfoSections/AboutAgencyMain";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <TopAttractionsMain />
       <ShortCutsMain />
       <TopToursMain />
+      <AboutAgencyMain />
       <PartnersSectionMain />
       <div className="h-[200vh]"></div>
     </div>

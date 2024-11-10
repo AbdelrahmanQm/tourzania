@@ -13,9 +13,12 @@ const HeroMain: React.FC = () => {
         src={worldMap}
         fill
         alt="world map"
-        className="opacity-15  "
-        objectFit="cover"
+        className="opacity-15"
+        style={{ objectFit: "cover" }}
+        quality={50}
+        loading="lazy"
       />
+
       <div className="lg:max-w-[1250px] md:max-w-[1000px] mx-auto flex items-center h-[100vh] gap-12 relative lg:flex-row sm:flex-col">
         <div className="lg:mt-0 sm:mt-36 sm:text-center lg:text-left">
           <HeroText />

@@ -5,12 +5,8 @@ import heroImageTwo from "../../../public/img/i-parallax-20.jpeg";
 
 const HeroImages: React.FC = () => {
   const [offsetY, setOffsetY] = useState<number>(0);
-  const [imageOneOffset, setImageOneOffset] = useState<number>(
-    window.innerWidth > 1150 ? 50 : 0
-  );
-  const [imageTwoOffset, setImageTwoOffset] = useState<number>(
-    window.innerWidth > 1150 ? 200 : 0
-  );
+  const [imageOneOffset, setImageOneOffset] = useState<number>(50);
+  const [imageTwoOffset, setImageTwoOffset] = useState<number>(200);
   const handleScroll = () => {
     if (window.innerWidth > 1150) {
       setOffsetY(window.scrollY < 800 ? window.scrollY : 800);
@@ -40,6 +36,10 @@ const HeroImages: React.FC = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   });
+  useEffect(() => {
+    setImageOneOffset(window.innerWidth > 1150 ? 50 : 0);
+    setImageTwoOffset(window.innerWidth > 1150 ? 200 : 0);
+  }, []);
   return (
     <div className="flex gap-8 w-full md:flex-row sm:flex-col">
       <div
