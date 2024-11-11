@@ -20,6 +20,11 @@ const mainData = {
           level of quality and safety to provide them with a Life Time tour and
           unforgettable experience in Oman.`,
     },
+    aboutOman: {
+      mainText: "Sultanate Of Oman",
+      subText: "Everyone by nature loves to see the beauty",
+      aboutText: `Oman is a country with unique nature, it have a long coastal line that include wonderful soft sand beaches, there also a wonderful spots for water sports, snorkeling, whales watching and dolphin watching, you can also watch sea turtles hatching on the beaches.`,
+    },
     features: [
       {
         icon: OmanFlag,

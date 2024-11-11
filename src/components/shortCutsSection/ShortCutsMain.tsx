@@ -7,7 +7,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 const ShortCutsMain: React.FC = () => {
   return (
-    <div className="flex flex-col items-center mt-[150px] bg-graybg px-4 py-24 relative overflow-hidden ">
+    <div className=" flex flex-col items-center mt-24 bg-graybg px-4 py-24 relative overflow-hidden ">
       <Image
         src={worldMap}
         alt="world map"

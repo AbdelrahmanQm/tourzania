@@ -8,6 +8,7 @@ import TopToursMain from "@/components/topToursSection/TopToursMain";
 import TopAttractionsMain from "@/components/topAttractionsSection/TopAttractionsMain";
 import PartnersSectionMain from "@/components/partnersSection/PartnersSectionMain";
 import AboutAgencyMain from "@/components/InfoSections/AboutAgencyMain";
+import AboutOmanMain from "@/components/InfoSections/AboutOmanMain";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <HeroMain />
       <FeaturesMain />
       <TopAttractionsMain />
+      <AboutOmanMain />
       <ShortCutsMain />
       <TopToursMain />
       <AboutAgencyMain />
