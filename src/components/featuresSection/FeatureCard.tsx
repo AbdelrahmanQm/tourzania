@@ -13,7 +13,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <Icon className="text-5xl" />
+      <div className="text-5xl">
+        <Icon />
+      </div>
       <h2 className="font-bold text-xl text-center text-green">{mainText}</h2>
       <h3 className="text-center text-gray">{subText}</h3>
     </div>

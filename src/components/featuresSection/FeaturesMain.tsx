@@ -6,14 +6,12 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const FeaturesMain: React.FC = () => {
   return (
-    <div className="lg:mt-[150px] md:mt-[300px] sm:mt-[350px] max-w-[1250px] mx-auto flex flex-col gap-12 items-center px-4">
+    <div className="lg:mt-[150px] md:mt-[200px] sm:mt-[250px] max-w-[1250px] mx-auto flex flex-col gap-12 items-center px-4">
       <div className="flex flex-col gap-4 items-center">
         <h2 className="font-bold text-xl font-hand mb-4 text-lightgreen">
           We are unique

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <TopToursMain />
       <AboutAgencyMain />
       <PartnersSectionMain />
-      <div className="h-[200vh]"></div>
+      {/* <div className="h-[200vh]"></div> */}
     </div>
   );
 };

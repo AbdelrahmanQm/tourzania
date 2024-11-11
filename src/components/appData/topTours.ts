@@ -10,7 +10,7 @@ const toursData = [
     name: "Muscat City Tour",
     city: "Muscat",
     image: muscatCityTour,
-    duration: "8",
+    duration: 8,
     durationUnit: "Hours",
     price: 134,
     describtion:

@@ -3,7 +3,7 @@ import NavLogo from "./NavLogo";
 import NavLinks from "./NavLinks";
 import NavLogin from "./NavLogin";
 import MenuBtn from "./MenuBtn";
-import SideBarBtn from "./SideBarBtn";
+// import SideBarBtn from "./SideBarBtn";
 
 const NavMain: React.FC = () => {
   return (
@@ -20,9 +20,9 @@ const NavMain: React.FC = () => {
             <div className="sm:block lg:hidden">
               <MenuBtn />
             </div>
-            <div className="lg:block sm:hidden">
+            {/* <div className="lg:block sm:hidden">
               <SideBarBtn />
-            </div>
+            </div> */}
             <NavLogin />
           </div>
         </nav>

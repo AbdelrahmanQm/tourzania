@@ -19,7 +19,7 @@ export default function RootLayout({
     <StoreProvider>
       <html lang="en">
         <body className="font-body">
-          <SideBar />
+          {/* <SideBar /> */}
           <NavMain />
           {children}
           <FooterMain />

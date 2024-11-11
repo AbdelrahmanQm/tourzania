@@ -15,7 +15,7 @@ const TopAttractionsMain: React.FC = () => {
         fill
         className="absolute left-0 top-0 opacity-15"
       />
-      <div className="max-w-[1250px] mx-auto px-4 mt-44 py-12 ">
+      <div className="max-w-[1250px] mx-auto px-4 mt-24 py-12 ">
         <div className="flex flex-col items-center mb-12">
           <h2 className="font-bold text-3xl text-section ">Top Attractions</h2>
         </div>
